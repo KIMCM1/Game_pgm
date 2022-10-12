@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <conio.h>
 
-#define cake_number 30  //°úÀÚÀÇ °³¼ö 
+#define cake_number 30  //ê³¼ìì˜ ê°œìˆ˜ 
 
 void intro_game(void);
 void input_participant(char user_name[][8]);
@@ -26,10 +26,10 @@ int main(void)
 	end=cake_number-1;
 
 	system("cls");
-	game_control(user_name, cake_condition, &cake_left, 2,  &start, &end);  //userÀÇ °ªÀ» 2·Î ÇÏ¿© °úÀÚÀÇ ÃÊ±â»óÅÂ¸¦ Ãâ·Â
+	game_control(user_name, cake_condition, &cake_left, 2,  &start, &end);  //userì˜ ê°’ì„ 2ë¡œ í•˜ì—¬ ê³¼ìì˜ ì´ˆê¸°ìƒíƒœë¥¼ ì¶œë ¥
 
 	gotoxy(10, 12);
-	printf("¾Æ¹«Å°³ª ´©¸£¸é ´ÙÀ½ ¼ø¼­¸¦ ÁøÇàÇÕ´Ï´Ù. ");
+	printf("ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ë©´ ë‹¤ìŒ ìˆœì„œë¥¼ ì§„í–‰í•©ë‹ˆë‹¤. ");
 	getch();
 	do
 	{
@@ -43,27 +43,27 @@ int main(void)
 				break;
 			}
 			gotoxy(10, 12);
-			printf("¾Æ¹«Å°³ª ´©¸£¸é ´ÙÀ½ ¼ø¼­¸¦ ÁøÇàÇÕ´Ï´Ù. ");
+			printf("ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ë©´ ë‹¤ìŒ ìˆœì„œë¥¼ ì§„í–‰í•©ë‹ˆë‹¤. ");
 			getch();
 		}
 	}while(cake_left>2);
 
 	gotoxy(10, 12);
-	printf("%s´ÔÀÌ ÀÌ°å½À´Ï´Ù. ", user_name[winner]);
+	printf("%së‹˜ì´ ì´ê²¼ìŠµë‹ˆë‹¤. ", user_name[winner]);
 	gotoxy(10, 13);
-	printf("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù. \n");
+	printf("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤. \n");
 	return 0;
 }
 
 void intro_game(void)
 {
 	system("cls");
-	printf("ÁÖ»çÀ§·Î °úÀÚ¸Ô±â °ÔÀÓ \n\n");
-	printf("µÎ»ç¶÷ÀÌ ¼­·Î ¾ç³¡ÀÇ ÁÖ»çÀ§ ¼ıÀÚ¸¸Å­\n");
-	printf("°úÀÚ¸¦ ¸Ô´Â °ÔÀÓÀÔ´Ï´Ù. \n");
-	printf("¸¶Áö¸· ³²Àº °úÀÚ¸¦ ¸Ô´Â »ç¶÷ÀÌ ÀÌ±é´Ï´Ù. \n\n");
-	printf("¾Æ¹«Å°³ª ´©¸£¸é °ÔÀÓÂü°¡ÀÚ¸¦\n");
-	printf("ÀÔ·ÂÇÕ´Ï´Ù.\n");
+	printf("ì£¼ì‚¬ìœ„ë¡œ ê³¼ìë¨¹ê¸° ê²Œì„ \n\n");
+	printf("ë‘ì‚¬ëŒì´ ì„œë¡œ ì–‘ëì˜ ì£¼ì‚¬ìœ„ ìˆ«ìë§Œí¼\n");
+	printf("ê³¼ìë¥¼ ë¨¹ëŠ” ê²Œì„ì…ë‹ˆë‹¤. \n");
+	printf("ë§ˆì§€ë§‰ ë‚¨ì€ ê³¼ìë¥¼ ë¨¹ëŠ” ì‚¬ëŒì´ ì´ê¹ë‹ˆë‹¤. \n\n");
+	printf("ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ë©´ ê²Œì„ì°¸ê°€ìë¥¼\n");
+	printf("ì…ë ¥í•©ë‹ˆë‹¤.\n");
 	getch();
 
 }
@@ -71,11 +71,11 @@ void intro_game(void)
 void input_participant(char user_name[][8])
 {
 	system("cls");
-	printf("1¹ø Âü°¡ÀÚÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ°í Enter>");
+	printf("1ë²ˆ ì°¸ê°€ìì˜ ì´ë¦„ì„ ì…ë ¥í•˜ê³  Enter>");
 	scanf("%s", user_name[0]);
-	printf("2¹ø Âü°¡ÀÚÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ°í Enter>");
+	printf("2ë²ˆ ì°¸ê°€ìì˜ ì´ë¦„ì„ ì…ë ¥í•˜ê³  Enter>");
 	scanf("%s", user_name[1]);
-	printf("¾Æ¹«Å°³ª ´©¸£¸é °ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù...");
+	printf("ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ë©´ ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤...");
 	getch();
 
 }
@@ -85,11 +85,11 @@ void game_control(char name[][8], int condition[],  int *left, int user, int *s,
 	cake_display(name, condition, *left, *s, *e);
 
 	if (user==2)
-		return;  //user°¡ 2°¡ µÇ´Â °æ¿ì´Â mainÀ¸·Î º¹±Í 
-	dice_number=rand()%6+1;  //ÁÖ»çÀ§ ³­¼ö »ı¼º
+		return;  //userê°€ 2ê°€ ë˜ëŠ” ê²½ìš°ëŠ” mainìœ¼ë¡œ ë³µê·€ 
+	dice_number=rand()%6+1;  //ì£¼ì‚¬ìœ„ ë‚œìˆ˜ ìƒì„±
 	*left-=dice_number;
 	gotoxy(10, 11);
-        printf("%s´ÔÀÇ ÁÖ»çÀ§ ¼ıÀÚ´Â %dÀÔ´Ï´Ù.",name[user],dice_number); 
+        printf("%së‹˜ì˜ ì£¼ì‚¬ìœ„ ìˆ«ìëŠ” %dì…ë‹ˆë‹¤.",name[user],dice_number); 
 			
 	if (user==0)
 	{
@@ -108,12 +108,12 @@ void game_control(char name[][8], int condition[],  int *left, int user, int *s,
 void cake_display(char name[][8], int condition[], int left, int s, int e)
 {
 	int i;
-	char *eat_cake="¡á", *remain_cake="¡à";
+	char *eat_cake="â– ", *remain_cake="â–¡";
 
 	gotoxy(40,5);
 	if (left<0)
 		left=0;
-	printf("³²Àº °úÀÚÀÇ ¼ö : %2d °³ ", left);
+	printf("ë‚¨ì€ ê³¼ìì˜ ìˆ˜ : %2d ê°œ ", left);
 
 	for(i=0;i<2;i++)
 	{
@@ -134,9 +134,9 @@ void cake_display(char name[][8], int condition[], int left, int s, int e)
 		}
 
 	gotoxy(10, 9);
-	printf("¸ÔÀº °úÀÚ ¼ö: %2d", s);
+	printf("ë¨¹ì€ ê³¼ì ìˆ˜: %2d", s);
 	gotoxy(52, 9);
-	printf("¸ÔÀº °úÀÚ ¼ö: %2d", 29-e);
+	printf("ë¨¹ì€ ê³¼ì ìˆ˜: %2d", 29-e);
 }
 
 void gotoxy(int x, int y)
