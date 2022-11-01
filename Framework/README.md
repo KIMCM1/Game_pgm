@@ -25,7 +25,7 @@
     ```
  * 타이틀 배경 색상 변경*   
   <img src="./screens/background.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="background"></img>
- <section class="hero is-success">
+ 
         <div class="hero-body">
           <p class="title">
             홍길동의 이력서
@@ -34,7 +34,7 @@
       </section>
  
  * 프로필 모양 및 형태 변경*   
-<section id="my_info">
+
             <h2>My info</h2> 
             <img src="images/profile.jpg" alt="홍길동의 얼굴 사진" />
             <table class="uk-table uk-table-divider">
