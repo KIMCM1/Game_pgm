@@ -61,5 +61,5 @@
      ```
 
 ### 호스팅 주소
-> [github.io](https://kimcm1.github.io/Game_pgm)   
+> [github.io](https://kimcm1.github.io/Game_pgm/Framework)   
 > [netlify](https://cssframeworkks.netlify.app/)
