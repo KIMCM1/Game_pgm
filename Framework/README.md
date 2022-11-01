@@ -36,7 +36,7 @@
  
  * 프로필 모양 및 형태 변경*   
 <img src="./screens/table.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="background"></img>
-           <section id="my_info">
+          
             <h2>My info</h2> 
             <img src="images/profile.jpg" alt="홍길동의 얼굴 사진" />
             <table class="uk-table uk-table-divider">
@@ -59,7 +59,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+      
 
 ### 호스팅 주소
 > [github.io](https://kimcm1.github.io/Game_pgm/Framework)   
