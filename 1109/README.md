@@ -6,7 +6,7 @@
 >[plotly](https://www.w3schools.com/js/js_graphics_plotly.asp)
 
  * chart.js 를 이용한   e-sports 시청자 규모 분석 (년도별)*
- <img src="./chart.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="chart"></img>
+ <img src="./chart.js.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="chart"></img>
  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
       
       var xValues = [2012, 2014, 2015, 2016, 2017, 2019];
