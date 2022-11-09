@@ -104,5 +104,5 @@
       
 
 ### 호스팅 주소
-> [github.io](https://kimcm1.github.io/Game_pgm/1109)   
+> [github.io](https://kimcm1.github.io/Game_pgm/1109/e-sports 통계.)   
 
